@@ -1,0 +1,23 @@
+The solution involves ensuring the parent element has a defined width or using alternative methods to achieve the desired width.  The following modified CSS snippet provides a solution:
+
+```css
+.container-parent {
+  width: 500px; /* or any other fixed width */
+}
+
+.container {
+  width: calc(100% - 10px);
+  background-color: lightblue;
+  padding: 10px;
+}
+```
+
+Alternatively, if a fixed width is undesirable, consider using viewport units or other relative units that don't depend on a parent element's width.
+
+```css
+.container {
+  width: 90vw; /* 90% of the viewport width */
+  background-color: lightblue;
+  padding: 10px;
+}
+```
