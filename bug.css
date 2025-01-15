@@ -1,0 +1,9 @@
+The following CSS code snippet demonstrates an issue where the `calc()` function is used incorrectly, leading to unexpected results. The problem lies in the usage of the `calc()` function within the `width` property of the `.container` class.  The expression `calc(100% - 10px)` is intended to make the container's width 100% of its parent's width minus 10 pixels. However, if the parent element doesn't have a defined width, the `100%` value in the `calc()` function becomes invalid, rendering the calculation incorrect.
+
+```css
+.container {
+  width: calc(100% - 10px);
+  background-color: lightblue;
+  padding: 10px;
+}
+```
